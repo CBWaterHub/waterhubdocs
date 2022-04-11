@@ -1,0 +1,43 @@
+site_name: Columbia Basin Water Hub Documentation
+site_description: Project documentation with Markdown for the Columbia Basin Water Hub.
+site_author: Columbia Basin Water Hub
+
+theme:
+    name: material
+    locale: en
+    palette:
+        - scheme: default
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        - scheme: slate
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+    logo: assets/logo.png
+
+extra_css:
+    - css/extra.css
+
+nav:
+    - Home: index.md
+    - Quick Start: quickstart.md
+    - User Guide:
+        - Overview: UserGuide/overview.md
+        - Core CKAN Concepts: UserGuide/core.md
+        - Data Publishing: UserGuide/publishing.md
+        - Data Access: UserGuide/retrieving.md
+    - Developer Guide:
+        - Overview: developer/index.md
+        - Developing Guide: developer/developer.md
+
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+    - attr_list
+    - def_list
+    - md_in_html
+
+copyright: Copyright &copy; 2022 <a href="https://livinglakescanada.ca">Living Lakes Canada</a>, Maintained by the <a href="http://data.cbwaterhub.ca/about">Water Hub Team</a>.
